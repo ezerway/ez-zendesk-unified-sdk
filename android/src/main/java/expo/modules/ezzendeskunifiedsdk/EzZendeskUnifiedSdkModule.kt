@@ -2,10 +2,16 @@ package expo.modules.ezzendeskunifiedsdk
 
 import expo.modules.kotlin.modules.Module
 import expo.modules.kotlin.modules.ModuleDefinition
-import zendesk.core.Zendesk;
-import zendesk.support.Support;
-import zendesk.answerbot.AnswerBot;
-import com.zendesk.logger.Logger;
+import android.content.Context
+import zendesk.core.Zendesk
+import zendesk.core.AnonymousIdentity
+import zendesk.classic.messaging.MessagingActivity
+import zendesk.support.Support
+import zendesk.support.SupportEngine
+import zendesk.answerbot.AnswerBot
+import zendesk.answerbot.AnswerBotEngine
+import zendesk.chat.ChatEngine
+import com.zendesk.logger.Logger
 
 
 class EzZendeskUnifiedSdkModule : Module() {
@@ -60,14 +66,9 @@ class EzZendeskUnifiedSdkModule : Module() {
     }
 
     AsyncFunction("show") {
-      Engine supportEngine = SupportEngine.engine();
-      Engine answerBotEngine = AnswerBotEngine.engine();
-      Engine chatEngine = ChatEngine.engine();
-
       MessagingActivity.builder()
-      .withEngines(answerBotEngine, chatEngine, supportEngine)
+      .withEngines(AnswerBotEngine.engine(), ChatEngine.engine(), SupportEngine.engine())
         .show(appContext.activityProvider?.currentActivity as Context);
-
     }
 
     AsyncFunction("setIdentity") { name: String, email: String ->

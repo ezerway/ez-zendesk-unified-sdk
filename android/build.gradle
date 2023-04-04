@@ -89,6 +89,7 @@ repositories {
 dependencies {
   implementation project(':expo-modules-core')
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:${getKotlinVersion()}"
+  implementation "androidx.appcompat:appcompat:1.4.2"
   api group: 'com.zendesk', name: 'messaging', version: '5.3.0'
   api group: 'com.zendesk', name: 'support', version: '5.1.2'
   api group: 'com.zendesk', name: 'answerbot', version: '3.1.1'
