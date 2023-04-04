@@ -1,0 +1,9 @@
+{
+  "platforms": ["ios", "android"],
+  "ios": {
+    "modules": ["EzZendeskUnifiedSdkModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.ezzendeskunifiedsdk.EzZendeskUnifiedSdkModule"]
+  }
+}
