@@ -38,7 +38,6 @@ public class EzZendeskUnifiedSdkModule: Module {
    
       // Build view controller
       let viewController = try Messaging.instance.buildUI(engines: [answerBotEngine, supportEngine, chatEngine], configs: [])
-      let chatEngine = try ChatEngine.engine()
 
       // Present view controller
       if var topController = UIApplication.sharedApplication().keyWindow?.rootViewController {

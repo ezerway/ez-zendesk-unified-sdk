@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
   s.dependency 'ExpoModulesCore'
   s.dependency 'ZendeskAnswerBotSDK', '4.0.0'
   s.dependency 'ZendeskChatSDK', '4.0.0'
-  s.dependency 'ZendeskSupportSDK' '7.0.0'
+  s.dependency 'ZendeskSupportSDK', '7.0.0'
 
   # Swift/Objective-C compatibility
   s.pod_target_xcconfig = {

@@ -1,4 +1,4 @@
-# ez-zendesk-unified-sdk
+# ez-zendesk-unified-sdk ![npm](https://img.shields.io/npm/dw/ez-zendesk-unified-sdk)
 
 The Ez Zendesk Unified SDK module is a software development kit that simplifies the integration of the Zendesk customer support platform into mobile applications built using the Expo framework. It provides easy-to-use APIs for features such as ticket creation, user authentication, and real-time chat, and includes useful features like automatic initialization and error handling.
 
