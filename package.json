@@ -1,6 +1,6 @@
 {
   "name": "ez-zendesk-unified-sdk",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The Ez Zendesk Unified SDK module is a software development kit that simplifies the integration of the Zendesk customer support platform into mobile applications built using the Expo framework. It provides easy-to-use APIs for features such as ticket creation, user authentication, and real-time chat, and includes useful features like automatic initialization and error handling.",
   "main": "build/index.js",
   "types": "build/index.d.ts",
